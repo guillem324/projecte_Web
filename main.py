@@ -11,7 +11,7 @@ from firebase_admin import firestore, credentials
 try:
     cred = credentials.Certificate('secure/proyecto1-56aab-198e37058f99.json')
 except:
-    cred = os.environ["FIREBASE_SERVICE_ACCOUNT"]
+    cred = credentials.Certificate(os.environ["FIREBASE_SERVICE_ACCOUNT"])
 # Application Default credentials are automatically created.
 firebase_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
