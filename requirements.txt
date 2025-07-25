@@ -1,0 +1,6 @@
+pip
+autopep8
+firebase-admin
+flask
+gunicorn
+requests
