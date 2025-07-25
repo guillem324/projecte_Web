@@ -4,3 +4,7 @@ firebase-admin
 flask
 gunicorn
 requests
+google
+google-cloud-storage
+google-cloud-firestore
+google-cloud-secret-manager
