@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <div class="contenidor_nav">
+                <a href="index.html">inici</a>
+                <a href="contingut.html">contingut</a>
+                <a href="articles.html">articles</a>
+            </div>
+        </header>
+        <main>
+            <p>Sobre mí
+¡Hola! Soy una persona apasionada por la tecnología, el aprendizaje constante y la creación de soluciones prácticas. Me encanta explorar nuevas herramientas, enfrentar desafíos y crecer con cada proyecto en el que participo.
+
+Este sitio es una pequeña ventana a mi mundo: aquí comparto lo que hago, lo que aprendo y lo que me inspira. Ya sea desarrollando una idea, resolviendo un problema o simplemente probando cosas nuevas, siempre estoy en movimiento.
+
+Gracias por pasarte por aquí. ¡Espero que encuentres algo interesante!</p>
+
+        </main>
+        <div class="contenidor_formulari">
+            <form>
+            <label for="username">Usuario:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="button" onclick="login()" value="Entrar">
+            </form>
+        </div>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+        <div id="popup">
+            <p>inici de sessió error</p>
+            <button onclick="closePopup()">X</button>
+        </div>
+</body>
+</html>
